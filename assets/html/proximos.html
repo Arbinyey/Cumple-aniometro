@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <title>Proximos Cumpleaños</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/img/logoreg.png" alt="Logo INPEC" class="logo">
+        <h1>Busqueda Próximos Cumpleaños</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registros.html">Registros</a></li>
+                <li><a href="proximos.html">Próximos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="birthdaySelector">
+        <label for="monthSelect">Selecciona un Mes:</label>
+        <select id="monthSelect">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+    </div>
+
+    <div id="monthlyBirthdays">
+        <h2>Cumpleaños del Mes</h2>
+        <ul id="birthdayList"></ul>
+    </div>
+
+    <div id="todayBirthdays">
+        <h2>Cumpleaños de Hoy</h2>
+        <ul id="todayBirthdayList"></ul>
+    </div>
+
+    <script src="/assets/js/proximos.js"></script>
+</body>
+</html>

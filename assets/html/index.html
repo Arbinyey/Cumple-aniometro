@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Cumpleaños</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/img/logoreg.png" alt="Logo INPEC" class="logo">
+        <h1>Funcionarios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registros.html">Registros</a></li>
+                <li><a href="proximos.html">Próximos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="agregarFuncionario">
+            <h2>Agregar Funcionario</h2>
+            <form id="formularioFuncionario" class="formulario-elegante">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre del Funcionario:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="fechaNacimiento">Fecha de Cumpleaños:</label>
+                    <input type="date" id="fechaNacimiento" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="area">Área:</label>
+                    <select id="area" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="DIREG">DIREG</option>
+                        <option value="ARCUV">ARCUV</option>
+                        <option value="DIREG">JUASP</option>
+                        <option value="ARCUV">ARTRA</option>
+                        <option value="DIREG">SISIN</option>
+                        <option value="ARCUV">AGECO</option>
+                        <option value="DIREG">PLANE</option>
+                        <option value="ARCUV">ARTAH</option>
+                        <option value="DIREG">CERVI</option>
+                        <option value="ARCUV">GEDIP</option>
+                        <option value="ARCUV">ATECI-DDHH</option>
+                        <!-- Agregar el resto de las opciones aquí -->
+                    </select>
+                </div>
+                <div class="campo-formulario">
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" required>
+                </div>
+                <div class="campo-formulario">
+                    <button type="submit">Agregar Funcionario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
